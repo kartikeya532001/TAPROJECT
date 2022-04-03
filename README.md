@@ -1,2 +1,2 @@
 # Test Automation Project
-In this project we are going to Puma website 
+In this project we are going test Puma website 
