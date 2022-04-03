@@ -6,7 +6,7 @@
       <class name="Project.Code1">
         <methods>
           <include name="beforeLogin"/>
-          <include name="login" invocation-numbers="2"/>
+          <include name="login"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
