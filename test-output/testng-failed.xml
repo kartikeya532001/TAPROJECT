@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Project.Code1">
+      <class name="Project.AssertionSoft">
         <methods>
-          <include name="beforeLogin"/>
-          <include name="login"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="f"/>
+          <include name="beforeCheck"/>
         </methods>
-      </class> <!-- Project.Code1 -->
+      </class> <!-- Project.AssertionSoft -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
