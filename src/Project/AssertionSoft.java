@@ -18,7 +18,6 @@ public class AssertionSoft {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://in.puma.com/");
-		System.out.println("Testing of Home Page...");
 		System.out.println();
 	}
 

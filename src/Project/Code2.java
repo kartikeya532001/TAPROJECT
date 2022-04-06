@@ -85,13 +85,13 @@ public class Code2 {
 	public void HomePageCheck() {
 		System.out.println("Home Page Check");
 		WebElement SaleImg = driver
-				.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div/section/div/div[1]/a/picture/img"));
+				.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/div/section/div/div[1]/a/picture/img"));
 		boolean si = SaleImg.isDisplayed();
 		WebElement button = driver
-				.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div/section/div/div[2]/div/div[3]/a"));
+				.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/div/section/div/div[2]/div/div[3]/a[1]"));
 		boolean b = button.isEnabled(); // for clickable check
 		WebElement Text = driver
-				.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div/section/div/div[2]/div/div[1]/span[1]"));
+				.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/div/section/div/div[2]/div/div[1]/span"));
 		boolean t = Text.isDisplayed();
 		System.out.println("Image Displayed: " + si);
 		System.out.println("Button Displayed and Enabled: " + b);
@@ -103,14 +103,14 @@ public class Code2 {
 	public void CardCheck() {
 		System.out.println("Card Check");
 		WebElement ProImg = driver.findElement(
-				By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div[1]/div/div[1]/a/div[1]/picture/img"));
+				By.xpath("/html/body/div[4]/div[3]/div/div/div/div/div[1]/div/div[1]/a/div[1]/picture/img"));
 		boolean pi = ProImg.isEnabled();
 		WebElement ptext = driver
-				.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div[1]/div/div[1]/a/div[2]/h3"));
+				.findElement(By.xpath("/html/body/div[4]/div[3]/div/div/div/div/div[1]/div/div[1]/a/div[2]/h3"));
 		boolean pt = ptext.getText().contains("PUMA x Royal Challengers Bangalore Replica Men's 2022 Jersey"); // to check if text is dsiplayed properly
 		boolean pt1 = ptext.isEnabled();
 		WebElement price = driver
-				.findElement(By.xpath("	/html/body/div[4]/div[2]/div/div/div/div/div[1]/div/div[1]/a/div[2]/div/div	"));
+				.findElement(By.xpath("/html/body/div[4]/div[3]/div/div/div/div/div[1]/div/div[1]/a/div[2]/div/div	"));
 		boolean p = price.getText().contains("1999");
 		boolean p1 = price.isEnabled();
 		System.out.println("Image Displayed and Clickable: " + pi);
@@ -129,9 +129,9 @@ public class Code2 {
 	public void FooterCheck() {
 		System.out.println("Footer Check");
 		WebElement supportS = driver
-				.findElement(By.xpath("/html/body/div[4]/footer/div/div/div[1]/div[1]/div/div[1]/span[1]"));
+				.findElement(By.xpath("/html/body/div[4]/footer/div/div/div[1]/div[1]/div"));
 		boolean s= supportS.isDisplayed();
-		WebElement aboutP= driver.findElement(By.xpath("/html/body/div[4]/footer/div/div/div[1]/div[2]/div/div[1]/span[1]"));
+		WebElement aboutP= driver.findElement(By.xpath("/html/body/div[4]/footer/div/div/div[1]/div[2]/div"));
 		boolean ap= aboutP.isDisplayed();
 		WebElement logoF = driver.findElement(By.xpath("/html/body/div[4]/footer/div/div/div[2]/div/a/img"));
 		boolean logof = logoF.isDisplayed();
@@ -147,9 +147,9 @@ public class Code2 {
 		boolean p= logoP.isEnabled();
 		WebElement logoY= driver.findElement(By.xpath("/html/body/div[4]/footer/div/div/div[2]/div/div[2]/a[5]"));
 		boolean y= logoY.isEnabled();
-		WebElement text = driver.findElement(By.xpath("/html/body/div[4]/div[8]/div/div/div[1]/div[2]"));
+		WebElement text = driver.findElement(By.xpath("/html/body/div[4]/div[9]/div/div/div[1]/div[2]"));
 		boolean texT = text.isDisplayed();
-		WebElement Box = driver.findElement(By.xpath("/html/body/div[4]/div[8]/div/div/div[1]/div[1]/a"));
+		WebElement Box = driver.findElement(By.xpath("/html/body/div[4]/div[9]/div/div/div[1]/div[1]/a"));
 		boolean box = Box.isDisplayed();
 		System.out.println("Support Section Displayed: "+s);
 		System.out.println("About Section Displayed: "+ap);
