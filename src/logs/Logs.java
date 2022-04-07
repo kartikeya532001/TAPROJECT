@@ -3,8 +3,7 @@ package logs;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
-import jdk.javadoc.doclet.Reporter;
+import org.testng.Reporter;
 
 public class Logs {
 	static WebDriver driver;
